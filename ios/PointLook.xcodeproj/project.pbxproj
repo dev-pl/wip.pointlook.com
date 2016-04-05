@@ -644,7 +644,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,11 +653,12 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = PointLook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pointlook.PointLook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex2006hw.pointlook;
 				PRODUCT_NAME = PointLook;
-				PROVISIONING_PROFILE = "3cbbceb1-600e-45ea-8a3e-749c31c06933";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -664,18 +666,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Davis (QNW23K4FHB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = PointLook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pointlook.PointLook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex2006hw.pointlook;
 				PRODUCT_NAME = PointLook;
-				PROVISIONING_PROFILE = "3cbbceb1-600e-45ea-8a3e-749c31c06933";
+				PROVISIONING_PROFILE = "11cc5575-c0cc-4d26-a8ed-84f7ca398288";
 			};
 			name = Release;
 		};
